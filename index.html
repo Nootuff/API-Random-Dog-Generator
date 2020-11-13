@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>API Dog generator </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="genNewImage()">
+        <h1 id="test">Random dog generator</h1>
+        <button onClick="genNewImage()">Generate new dog!</button>
+      <br>
+       <img id="dogImg" src="<%= EJSdogImg %>">
+      <br>
+      <p><strong> This is a: <span id ="dogText"></span></strong></p>
+      <footer class="white-text">
+    <p> &copy; Adam Walker 2020, images supplied by <a href="https://dog.ceo/dog-api/">Dog API</a>  </p>
+  </footer>
+  <script type="text/javascript" src="funcs.js"></script>
+    </body>
+</html>
